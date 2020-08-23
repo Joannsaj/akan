@@ -40,3 +40,32 @@ let dayOfTheWeek = Math.floor(((yearOfBirth.slice(0,2)/4)-2*yearOfBirth.slice(0,
 //arrays of names
 let femaleAkanNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 let maleAkanNames = ["Kwasi", "Kwadwa", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+
+//getting result
+if (genderValue==="female" && month && date){
+    switch(dayOfTheWeek){
+      case 0:
+        document.getElementById("result").textContent ="Your Akan name is" + femaleAkanNames[0] 
+      break;
+      case 1:
+        document.getElementById("result").textContent ="YourAkan name is" + femaleAkanNames[1]
+      break;
+      case 2:
+        document.getElementById("result").textContent ="YourAkan name is" + femaleAkanNames[2]
+      break;
+      case 3:
+        document.getElementById("result").textContent ="YourAkan name is" + femaleAkanNames[3]
+      break;
+      case 4:
+        document.getElementById("result").textContent ="YourAkan name is" + femaleAkanNames[4]
+      break; 
+      case 5:
+        document.getElementById("result").textContent ="YourAkan name is" + femaleAkanNames[5]
+      break; 
+      case 6:
+        document.getElementById("result").textContent ="YourAkan name is" + femaleAkanNames[6]
+      break;
+      default:
+        document.getElementById("result").textContent ="Invalid information";
+    }
+}
