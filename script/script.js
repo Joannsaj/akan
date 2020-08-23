@@ -2,17 +2,15 @@ function akanName ()
     let yearOfBirth = document.getElementById("year").value;
     let monthOfBirth =document.getElementById("month").value;
     let dateOfBirth =document.getElementById("date").value;
-    let genders = document.getElementsByName("gender");
+    let gender = document.getElementsByName("gender");
 
     // function to get gender
     function getGender () {
-        for (let gender of genders){
           if (gender.checked){
             return gender.value;
           }
         }
-      }
-    
+      
       let myGenderValue = getGender();
     
       console.log(myGenderValue);
