@@ -22,6 +22,8 @@ function getGender () {
         return true;
     }
 }
+let date = getDay();
+
 //validate month
 function getMonth () {
     if (monthOfBirth <= 0 || monthOfBirth > 12){
@@ -30,6 +32,7 @@ function getMonth () {
         return true;
     }
 }
+let month = getMonth();
 
 //Calculate birth day
 let dayOfTheWeek = Math.floor(((yearOfBirth.slice(0,2)/4)-2*yearOfBirth.slice(0,2)-1)+((5*yearOfBirth.slice(2)/4))+((26*(monthOfBirth+1)/10))+dateOfBirth)%7
