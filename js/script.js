@@ -31,5 +31,5 @@ function getMonth () {
     }
 }
 
-//Calculate day of the week
-/*let dayOfTheWeek = (((CC/4)-2*CC-1)+((5*YY/4))+((26*(MM+1)/10))+DD)%7*/c
+//Calculate birth day
+let dayOfTheWeek = Math.floor(((yearOfBirth.slice(0,2)/4)-2*yearOfBirth.slice(0,2)-1)+((5*yearOfBirth.slice(2)/4))+((26*(monthOfBirth+1)/10))+dateOfBirth)%7
