@@ -36,3 +36,7 @@ let month = getMonth();
 
 //Calculate birth day
 let dayOfTheWeek = Math.floor(((yearOfBirth.slice(0,2)/4)-2*yearOfBirth.slice(0,2)-1)+((5*yearOfBirth.slice(2)/4))+((26*(monthOfBirth+1)/10))+dateOfBirth)%7
+
+//arrays of names
+let femaleAkanNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+let maleAkanNames = ["Kwasi", "Kwadwa", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
