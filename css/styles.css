@@ -6,3 +6,8 @@ form {
     background-color: aqua;
     padding: 10px;
 }
+.menu {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+}
