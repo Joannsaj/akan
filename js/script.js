@@ -13,6 +13,7 @@ function getGender () {
     }
 }
  let genderValue = getGender();
+ console.log(genderValue)
 
 //validate day
  function getDay () {
@@ -68,4 +69,30 @@ if (genderValue==="female" && month && date){
       default:
         document.getElementById("result").textContent ="Invalid information";
     }
-}
+}else {
+    switch(dayOfTheWeek) {
+      case 0:
+        document.getElementById("result").textContent ="YourAkan name is" + maleAkanNames[0]
+      break;
+      case 1:
+        document.getElementById("result").textContent ="YourAkan name is" + maleAkanNames[1]
+      break;
+      case 2:
+        document.getElementById("result").textContent ="YourAkan name is" + maleAkanNames[2]
+      break;
+      case 3:
+        document.getElementById("result").textContent ="YourAkan name is" + maleAkanNames[3]
+      break;
+      case 4:
+        document.getElementById("result").textContent ="YourAkan name is" + maleAkanNames[4]
+      break;
+      case 5:
+        document.getElementById("result").textContent ="YourAkan name is" + maleAkanNames[5]
+      break;
+      case 6:
+        document.getElementById("result").textContent ="YourAkan name is" + maleAkanNames[6]
+      break;
+      default:
+        document.getElementById("result").textContent ="Invalid input"
+      }
+}  
