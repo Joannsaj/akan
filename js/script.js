@@ -16,9 +16,17 @@ function getGender () {
 
 //validate day
  function getDay () {
-    if (dateOfBirth < 1 || dateOfBirth > 31){
+    if (dateOfBirth <= 0 || dateOfBirth > 31){
         return false;
     } else {
+        return true;
+    }
+}
+//validate month
+function getMonth () {
+    if (monthOfBirth <= 0 || monthOfBirth > 12){
+        return false;
+    }else{
         return true;
     }
 }
