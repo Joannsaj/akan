@@ -4,6 +4,7 @@ function akanName () {
   let yearOfBirth = document.getElementById("year").value;
   let gender = document.getElementsByName("gender").value;
 }
+//getting gender
 function getGender () {
     if (gender.checked) {
         return gender.value;
@@ -13,5 +14,14 @@ function getGender () {
 }
  let genderValue = getGender();
 
+//validate day
+ function getDay () {
+    if (dateOfBirth < 1 || dateOfBirth > 31){
+        return false;
+    } else {
+        return true;
+    }
+}
+
 //Calculate day of the week
-/*let dayOfTheWeek = (((CC/4)-2*CC-1)+((5*YY/4))+((26*(MM+1)/10))+DD)%7*/
+/*let dayOfTheWeek = (((CC/4)-2*CC-1)+((5*YY/4))+((26*(MM+1)/10))+DD)%7*/c
