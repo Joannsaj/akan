@@ -5,11 +5,6 @@ This is an application to help one figure out their Akan name. Akan names are of
 ## Setup Requirements
 You can run this application on Google Chrome, Firefox or Safari.
 You can set it up by opening it through this link  https://joannsaj.github.io/akan/
-<<<<<<< HEAD
-=======
-## Known Bugs
-
->>>>>>> gh-pages
 ## Technologies Used
 *HTML
 *CSS
