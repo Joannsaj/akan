@@ -44,7 +44,7 @@ function akanName ()
   let maleAkanNames = ["Kwasi", "Kwadwa", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
   
   //getting result
-  if (genderValue==="female" && month && date){
+  if (myGenderValue==="female" && month && date){
     switch(dayOfTheWeek){
       case 0:
         document.getElementById("result").textContent ="Your Akan name is" + femaleAkanNames[0]
@@ -77,7 +77,7 @@ function akanName ()
       default:
         document.getElementById("result").textContent ="Invalid information";
     }
-  }else(genderValue==="male" && month && date);{
+  }else(myGenderValue==="male" && month && date);{
     switch(dayOfTheWeek) {
       case 0:
         document.getElementById("result").textContent ="YourAkan name is" + maleAkanNames[0]
