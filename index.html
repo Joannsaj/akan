@@ -11,20 +11,23 @@
       <p>Akan names are of Ghanian origin. Children are given first names basing on what day of the week they are born. Names change for different days of the week but they also change for different genders. That is, a female born on Monday won't have the same name as a male born on Monday.</p>
       <p>So as we know most people know their dates of birth but not what day they were born, this here is to help you figure that out and tell you your Akan name.</p>
       <h2>Fill in this form to find out your Akan name.</h2>
-        <form class="form" onsubmit="return akanName()">
-          <label for="month">Month:</label>
-          <input type="number" id="month" name="month" value=""required><br><br>
-          <label for="date">Date:</label>
-          <input type="number" id="date" name="date" value=""required><br><br>
-          <label for="year">Year</label>
-          <input type="number" id="year" name="year" value=""required><br><br>
-          <label for="gender">Choose your gender.</label><br>
-          <input type="radio" id="male" name="gender" value="male" required>
-          <label for="male">Male</label><br>
-          <input type="radio" id="female" name="gender" value="female" required>
-          <label for="female">Female</label><br>
-          <input type="submit" value="Submit">    
-        </form>
+      <form onsubmit="getAkanName()" method="GET">
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Date of birth</label>
+          <input type="date" class="form-control" id="date" required>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect">Gender</label>
+          <select class="form-control" id="gender" required>
+            <option value=""></option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>  
+        </div>
+        <button type="submit" class="btn-btn primary">
+         Submit
+        </button>
+      </form>  
       <h2 id="result"></h2>  
       <p>Click here to go to <a href =flex.html>page 2</a></p>
     </div>
