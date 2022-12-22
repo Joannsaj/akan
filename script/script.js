@@ -16,9 +16,9 @@ function getAkanName() {
       alert("Invalid Date:Date has not yet reached");
   } else if (gender == "female") {
       document.getElementById("result").textContent="Your Akan name is " + femaleAkanNames[day]
-      alert("Your Akan name is " + femaleAkanNames[day])
+      // alert("Your Akan name is " + femaleAkanNames[day])
   } else {
     document.getElementById("result").textContent="Your Akan name is " + maleAkanNames[day]
-    alert("Your Akan name is " + maleAkanNames[day])
+    // alert("Your Akan name is " + maleAkanNames[day])
   }
 }
